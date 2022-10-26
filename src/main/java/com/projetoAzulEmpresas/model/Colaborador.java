@@ -21,7 +21,7 @@ public class Colaborador implements Serializable{
 	private static final long serialVersionUID = -705125855413216034L;
 	
 	@Id @JsonIgnore
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String nome;
 	@JsonIgnore
