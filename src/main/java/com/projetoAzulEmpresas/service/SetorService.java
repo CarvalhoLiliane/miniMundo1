@@ -16,9 +16,9 @@ public class SetorService {
 	private SetorRepository setorRepository;
 	
 	
-//	public Setor cadastrar(Setor setor) {
-//		return setorRepository.save(setor);
-//	}
+	public Setor cadastrar(Setor setor) {
+		return setorRepository.save(setor);
+	}
 	
 	
 	public Optional<Setor>  findById(Long id){

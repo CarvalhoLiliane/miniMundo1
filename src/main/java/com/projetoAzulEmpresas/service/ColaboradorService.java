@@ -1,5 +1,6 @@
 package com.projetoAzulEmpresas.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,10 @@ public class ColaboradorService {
 	
 	public Optional<Colaborador> buscar(Long id) {
 		return colabRepository.findById(id);
+	}
+	
+	public List<Colaborador> listar(Colaborador colaborador){
+		return colabRepository.findAll();
 	}
 
 }

@@ -1,5 +1,6 @@
 package com.projetoAzulEmpresas.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.modelmapper.ModelMapper;
@@ -48,6 +49,12 @@ public class ColaboradorController {
 	@ResponseStatus(HttpStatus.OK)
 	public Optional<Colaborador> buscar(@PathVariable Long id) {
 		return colabService.buscar(id);
+	}
+	
+	@GetMapping
+	@ResponseStatus(HttpStatus.OK)
+	public List<Colaborador> colaboradores(Colaborador colaborador){
+		return colabService.listar(colaborador);
 	}
 
 }
